@@ -57,9 +57,6 @@ Setelah aplikasi berjalan, kamu bisa mengakses dokumentasi interaktif di:
 
 Swagger UI
 
-ReDoc
-
-📁 Dokumentasi tambahan juga tersedia di folder docs/ untuk penjelasan teknis, struktur folder, dan contoh penggunaan lebih lanjut.
 
 🧪 Contoh Penggunaan API
 🔸 Registrasi Pengguna
@@ -70,17 +67,17 @@ Body (JSON):
 
 json
 {
-  "username": "user1",
-  "password": "password123"
+  "username": "testing",
+  "password": "test123"
 }
 🔸 Login dan Dapatkan Token
 Endpoint:
 
-POST /token
+POST /login
 Form data:
 
-username=user1
-password=password123
+username=testing
+password=test123
 🔸 Mendapatkan Informasi Pengguna (Terproteksi)
 Endpoint:
 
@@ -88,18 +85,7 @@ GET /users/me
 Headers:
 
 Authorization: Bearer <access_token>
-📂 Struktur Folder (Contoh)
-arduino
 
-.
-├── app/
-│   ├── main.py
-│   ├── models/
-│   ├── routers/
-│   ├── database.py
-│   └── auth.py
-├── docs/
-│   └── api-docs.md
-├── run.py
-├── requirements.txt
-└── README.md
+ReDoc
+
+📁 Dokumentasi tambahan juga tersedia di folder docs/ untuk penjelasan teknis, struktur folder, dan contoh penggunaan lebih lanjut.
