@@ -14,13 +14,13 @@ class User(UserBase):
     is_active: bool
 
     class Config:
-        orm_mode = True
+         from_attributes = True
 
 class UserWithProjects(User):
     projects: List["Project"] = []
 
     class Config:
-        orm_mode = True
+         from_attributes = True
 
 class Token(BaseModel):
     access_token: str
@@ -37,7 +37,7 @@ class BlacklistedToken(BlacklistedTokenBase):
     blacklisted_on: datetime
 
     class Config:
-        orm_mode = True
+         from_attributes = True
 
 class ProjectBase(BaseModel):
     name: str
@@ -54,7 +54,7 @@ class Project(ProjectBase):
     tasks: List["Task"] = []
 
     class Config:
-        orm_mode = True
+         from_attributes = True
 
 class TaskBase(BaseModel):
     name: str
@@ -72,7 +72,7 @@ class Task(TaskBase):
     project_id: int
 
     class Config:
-        orm_mode = True
+         from_attributes = True
 
 class LogoutRequest(BaseModel):
     token: str

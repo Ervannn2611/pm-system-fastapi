@@ -1,4 +1,3 @@
-# Proyek FastAPI - Autentikasi Pengguna
 
 Proyek ini adalah implementasi sistem autentikasi pengguna menggunakan FastAPI, SQLAlchemy, dan JWT. Cocok digunakan sebagai dasar sistem login berbasis token di aplikasi web atau mobile.
 
